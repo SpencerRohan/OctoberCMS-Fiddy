@@ -1,0 +1,34 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+  fields:
+    id:
+      label: ID
+      disabled: true
+      hidden: true
+      tab: Restaurant
+
+    name:
+      label: Restaurant Name
+      type: text
+      span: left
+      required: true
+      tab: Restaurant
+
+    code:
+      label: Developer Code
+      type: text
+      span: left
+      tab: Developer Notes
+      
+    logo:
+      label: Logo
+      type: recordfinder
+      list: $/fiddy/site/models/image/columns.yaml
+      nameFrom: description
+      prompt: Click %s to pick a logo
+      required: true
+      span: left
+      tab: Restaurant

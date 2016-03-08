@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Restaurant
+
+# Model Form Field configuration
+form: $/fiddy/site/models/restaurant/fields.yaml
+
+# Model Class name
+modelClass: Fiddy\Site\Models\Restaurant
+
+# Default redirect location
+defaultRedirect: fiddy/site/restaurants
+
+# Create page
+create:
+    title: Create Restaurant
+    redirect: fiddy/site/restaurants/update/:id
+    redirectClose: fiddy/site/restaurants
+
+# Update page
+update:
+    title: Edit Restaurant
+    redirect: fiddy/site/restaurants
+    redirectClose: fiddy/site/restaurants
+
+# Preview page
+preview:
+    title: Preview Restaurant

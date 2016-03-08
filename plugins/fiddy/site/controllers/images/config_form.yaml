@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Image
+
+# Model Form Field configuration
+form: $/fiddy/site/models/image/fields.yaml
+
+# Model Class name
+modelClass: Fiddy\Site\Models\Image
+
+# Default redirect location
+defaultRedirect: fiddy/site/images
+
+# Create page
+create:
+    title: Create Image
+    redirect: fiddy/site/images/update/:id
+    redirectClose: fiddy/site/images
+
+# Update page
+update:
+    title: Edit Image
+    redirect: fiddy/site/images
+    redirectClose: fiddy/site/images
+
+# Preview page
+preview:
+    title: Preview Image

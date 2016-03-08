@@ -1,0 +1,19 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+  id:
+    label: ID
+    searchable: true
+  image: 
+    label: Preview
+    sortable: false
+  description:
+    label: Description
+    searchable: true
+  href:
+    label: Media Selection
+  alt:
+    label: Alt Tag
+    searchable: true
