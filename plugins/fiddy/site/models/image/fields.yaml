@@ -4,16 +4,16 @@
 
 fields:
   id:
-    label: ID
+    label:    ID
     disabled: true
-    hidden: true
+    hidden:   true
   description:
-    label: Description
-    type: text
+    label:  Description
+    type:   text
   href:
-    label: Media Selection
-    type: mediafinder
-    mode: image
+    label:  Media Selection
+    type:   mediafinder
+    mode:   image
   alt:
-    label: Alt Tag
-    type: text
+    label:  Alt Tag
+    type:   text

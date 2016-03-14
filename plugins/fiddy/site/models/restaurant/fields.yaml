@@ -14,7 +14,6 @@ tabs:
       label: Restaurant Name
       type: text
       span: left
-      required: true
       tab: Restaurant
 
     code:
@@ -29,6 +28,6 @@ tabs:
       list: $/fiddy/site/models/image/columns.yaml
       nameFrom: description
       prompt: Click %s to pick a logo
-      required: true
-      span: left
+      span: right
       tab: Restaurant
+

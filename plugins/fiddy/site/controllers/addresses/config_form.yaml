@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Address
+
+# Model Form Field configuration
+form: $/fiddy/site/models/address/fields.yaml
+
+# Model Class name
+modelClass: Fiddy\Site\Models\Address
+
+# Default redirect location
+defaultRedirect: fiddy/site/addresses
+
+# Create page
+create:
+    title: Create Address
+    redirect: fiddy/site/addresses/update/:id
+    redirectClose: fiddy/site/addresses
+
+# Update page
+update:
+    title: Edit Address
+    redirect: fiddy/site/addresses
+    redirectClose: fiddy/site/addresses
+
+# Preview page
+preview:
+    title: Preview Address

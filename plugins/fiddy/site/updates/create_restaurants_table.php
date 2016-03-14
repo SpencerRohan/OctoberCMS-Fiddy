@@ -12,9 +12,14 @@ class CreateRestaurantsTable extends Migration
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('code');
-            $table->integer('logo_id')->unsigned()->index();
-            $table->foreign('logo_id')->references('id')->on('fiddy_site_images');
+            $table->string('name');
+            $table->string('code')->unique();
+            $table->integer('logo_id')
+                  ->unsigned()->nullable()->index();
+            $table->foreign('logo_id')
+                  ->references('id')
+                  ->on('fiddy_site_images')
+                  ->onDelete('set null');
             $table->timestamps();
         });
     }

@@ -12,7 +12,7 @@ class CreateImagesTable extends Migration
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('description', 50);
+            $table->string('description', 50)->unique();
             $table->string('href');
             $table->string('alt', 30);
             $table->timestamps();

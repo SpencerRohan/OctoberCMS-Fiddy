@@ -1,0 +1,21 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+    title:
+        lable: title
+        searchable: true
+    address:
+        label: Address
+        searchable: true
+        sortable: false
+    additional_info:
+        label: Additional Info
+        seachable: true
+    establishment:
+        label: Restaurant
+        sortable: false

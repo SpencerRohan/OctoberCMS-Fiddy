@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Phone
+
+# Model Form Field configuration
+form: $/fiddy/site/models/phone/fields.yaml
+
+# Model Class name
+modelClass: Fiddy\Site\Models\Phone
+
+# Default redirect location
+defaultRedirect: fiddy/site/phones
+
+# Create page
+create:
+    title: Create Phone
+    redirect: fiddy/site/phones/update/:id
+    redirectClose: fiddy/site/phones
+
+# Update page
+update:
+    title: Edit Phone
+    redirect: fiddy/site/phones
+    redirectClose: fiddy/site/phones
+
+# Preview page
+preview:
+    title: Preview Phone

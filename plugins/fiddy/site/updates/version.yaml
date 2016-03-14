@@ -1,5 +1,7 @@
 1.0.1: First version of Site
-1.0.2:
-  - Create restaurants and images table
+1.0.2: 
+  - Create tables
   - create_images_table.php
   - create_restaurants_table.php
+  - create_addresses_table.php
+  - create_phones_table.php

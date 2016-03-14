@@ -62,17 +62,50 @@ class Plugin extends PluginBase
      */
     public function registerNavigation()
     {
-        return []; // Remove this line to activate
+         // return []; // Remove this line to activate
 
         return [
             'site' => [
-                'label'       => 'Restaurants',
+                'label'       => 'Information',
                 'url'         => Backend::url('fiddy/site/restaurants'),
-                'icon'        => 'icon-leaf',
+                'icon'        => 'icon-database',
                 'permissions' => ['fiddy.site.*'],
-                'order'       => 500,
-            ],
-        ];
+                'order'       => 10,
+                'sideMenu' => [
+                    'images' => [
+                        'label'       => 'Images',
+                        'url'         => Backend::url('fiddy/site/images'),
+                        'icon'        => 'icon-camera-retro',
+                        'permissions' => ['fiddy.site.*'],
+                        'order'       => 500,
+                    ],
+
+
+                    'phones' => [
+                        'label'       => 'Phones',
+                        'url'         => Backend::url('fiddy/site/phones'),
+                        'icon'        => 'icon-phone',
+                        'permissions' => ['fiddy.site.*'],
+                        'order'       => 500,
+                    ],
+                    
+                    'Addresses' => [
+                        'label'       => 'Addresses',
+                        'url'         => Backend::url('fiddy/site/addresses'),
+                        'icon'        => 'icon-map-marker',
+                        'permissions' => ['fiddy.site.*'],
+                        'order'       => 500,
+                    ],
+
+                    'restaurants' => [
+                        'label'       => 'Restaurants',
+                        'url'         => Backend::url('fiddy/site/restaurants'),
+                        'icon'        => 'icon-cutlery',
+                        'permissions' => ['fiddy.site.*'],
+                        'order'       => 500,
+                    ],
+                ]]
+            ];
     }
 
 }

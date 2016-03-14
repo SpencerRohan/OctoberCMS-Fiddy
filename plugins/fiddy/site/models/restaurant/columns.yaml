@@ -5,6 +5,9 @@ columns:
     id:
         label: ID
         searchable: true
+    name: 
+        label: Name
+        searchable: true
     image:
         label: Logo
         type: relation
@@ -12,3 +15,6 @@ columns:
     code:
         label: Code
         searchable: true
+    locations:
+    phones:
+        label: Phones

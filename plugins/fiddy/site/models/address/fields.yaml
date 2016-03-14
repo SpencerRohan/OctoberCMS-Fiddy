@@ -1,0 +1,40 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label:    ID
+        disabled: true
+        hidden:   true
+    title:
+        label:  Title
+        type:   text
+        span:   left
+    street:
+        label:  Street
+        type:   text
+        span:   left
+    city: 
+        label:  City
+        type:   text
+        span:   right
+    state: 
+        label:  State Abbriviation
+        type:   text
+        span:   left
+    zip:
+        label:  Zip Code
+        type:   text
+        span:   right
+    additional_info:
+        label:  Additional Address Info
+        type:   text
+        span:   left
+    restaurant:
+        label:    Restaurant
+        type:     recordfinder
+        list:     $/fiddy/site/models/restaurant/columns.yaml
+        nameFrom: name
+        prompt:   Click %s to pick a Restaurant
+        span:     left

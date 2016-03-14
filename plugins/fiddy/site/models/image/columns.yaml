@@ -14,6 +14,7 @@ columns:
     searchable: true
   href:
     label: Media Selection
+    mode: image
   alt:
     label: Alt Tag
     searchable: true
